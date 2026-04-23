@@ -119,16 +119,10 @@ class Program
             Console.WriteLine($"Question {i}/5 \t Score: {score}\n");
             Console.WriteLine(questions[i].GetQuestionString());
             Console.WriteLine("Enter Solution below:");
-            int solution = 0; ;
-            try
-            {
-                solution = int.Parse(Console.ReadLine());
+            int solution = 0;
+            solution = int.Parse(Console.ReadLine());
 
-            }
-            catch (FormatException)
-            {
 
-            }
             if (solution == questions[i].GetResult())
                 score++;
         }
