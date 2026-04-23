@@ -68,15 +68,8 @@ class Program
 
         Console.Write("Selection: ");
         int decision = 0;
-        try
-        {
-            decision = int.Parse(Console.ReadLine());
+        decision = int.Parse(Console.ReadLine());
 
-        }
-        catch (FormatException)
-        {
-
-        }
         switch (decision)
         {
             case 1:
